@@ -1,0 +1,406 @@
+2026-05-15 08:15:48.884 +07:00 [INF] === Stroke Prediction API starting ===
+2026-05-15 08:16:04.553 +07:00 [INF] Supabase connection OK
+2026-05-15 08:16:04.618 +07:00 [INF] Stroke Prediction API is running on http://localhost:5263
+2026-05-15 08:16:04.680 +07:00 [INF] Now listening on: http://localhost:5263
+2026-05-15 08:16:04.683 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-15 08:16:04.685 +07:00 [INF] Hosting environment: Development
+2026-05-15 08:16:04.686 +07:00 [INF] Content root path: C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API
+2026-05-15 08:16:22.592 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5263/api/v1/auth/login - application/json; charset=utf-8 40
+2026-05-15 08:16:22.623 +07:00 [INF] → POST /api/v1/auth/login | IP: ::1
+2026-05-15 08:16:22.642 +07:00 [INF] Executing endpoint 'StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API)'
+2026-05-15 08:16:22.667 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StrokePrediction.API.controllers.LoginRequest) on controller StrokePrediction.API.controllers.AuthController (StrokePrediction.API).
+2026-05-15 08:16:37.942 +07:00 [ERR] An error occurred using the connection to database 'postgres' on server 'tcp://aws-1-ap-south-1.pooler.supabase.com:5432'.
+2026-05-15 08:16:37.967 +07:00 [ERR] An exception occurred while iterating over the results of a query for context type 'StrokePrediction.Infrastructure.database.AppDbContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.TimeoutException: Timeout during reading attempt
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.TimeoutException: Timeout during reading attempt
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-15 08:16:37.988 +07:00 [INF] Executed action StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API) in 15312.82ms
+2026-05-15 08:16:37.991 +07:00 [INF] Executed endpoint 'StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API)'
+2026-05-15 08:16:37.994 +07:00 [ERR] Unhandled exception: /api/v1/auth/login
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.TimeoutException: Timeout during reading attempt
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at StrokePrediction.API.controllers.AuthController.Login(LoginRequest req) in C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at StrokePrediction.API.middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\middlewares\RequestLoggingMiddleware.cs:line 29
+   at StrokePrediction.API.middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\middlewares\GlobalExceptionMiddleware.cs:line 30
+2026-05-15 08:16:38.040 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5263/api/v1/auth/login - 500 null application/json 15449.2471ms
+2026-05-15 08:16:48.425 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5263/api/v1/auth/login - application/json; charset=utf-8 40
+2026-05-15 08:16:48.430 +07:00 [INF] → POST /api/v1/auth/login | IP: ::1
+2026-05-15 08:16:48.432 +07:00 [INF] Executing endpoint 'StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API)'
+2026-05-15 08:16:48.435 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StrokePrediction.API.controllers.LoginRequest) on controller StrokePrediction.API.controllers.AuthController (StrokePrediction.API).
+2026-05-15 08:17:03.493 +07:00 [ERR] An error occurred using the connection to database 'postgres' on server 'tcp://aws-1-ap-south-1.pooler.supabase.com:5432'.
+2026-05-15 08:17:03.498 +07:00 [ERR] An exception occurred while iterating over the results of a query for context type 'StrokePrediction.Infrastructure.database.AppDbContext'.
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.TimeoutException: Timeout during reading attempt
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.TimeoutException: Timeout during reading attempt
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-15 08:17:03.511 +07:00 [INF] Executed action StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API) in 15073.5636ms
+2026-05-15 08:17:03.514 +07:00 [INF] Executed endpoint 'StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API)'
+2026-05-15 08:17:03.515 +07:00 [ERR] Unhandled exception: /api/v1/auth/login
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Exception while reading from stream
+ ---> System.TimeoutException: Timeout during reading attempt
+   at Npgsql.Internal.NpgsqlReadBuffer.<Ensure>g__EnsureLong|55_0(NpgsqlReadBuffer buffer, Int32 count, Boolean async, Boolean readingNotifications)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at StrokePrediction.API.controllers.AuthController.Login(LoginRequest req) in C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at StrokePrediction.API.middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\middlewares\RequestLoggingMiddleware.cs:line 29
+   at StrokePrediction.API.middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\middlewares\GlobalExceptionMiddleware.cs:line 30
+2026-05-15 08:17:03.532 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5263/api/v1/auth/login - 500 null application/json 15107.0007ms
+2026-05-15 08:23:47.948 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5263/api/v1/auth/login - application/json; charset=utf-8 40
+2026-05-15 08:23:47.951 +07:00 [INF] → POST /api/v1/auth/login | IP: ::1
+2026-05-15 08:23:47.954 +07:00 [INF] Executing endpoint 'StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API)'
+2026-05-15 08:23:47.957 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StrokePrediction.API.controllers.LoginRequest) on controller StrokePrediction.API.controllers.AuthController (StrokePrediction.API).
+2026-05-15 08:23:59.138 +07:00 [ERR] An error occurred using the connection to database 'postgres' on server 'tcp://aws-1-ap-south-1.pooler.supabase.com:5432'.
+2026-05-15 08:23:59.142 +07:00 [ERR] An exception occurred while iterating over the results of a query for context type 'StrokePrediction.Infrastructure.database.AppDbContext'.
+System.Net.Sockets.SocketException (11004): The requested name is valid, but no data of the requested type was found.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync[TResult](Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.Net.Sockets.SocketException (11004): The requested name is valid, but no data of the requested type was found.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync[TResult](Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-15 08:23:59.151 +07:00 [INF] Executed action StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API) in 11192.704ms
+2026-05-15 08:23:59.154 +07:00 [INF] Executed endpoint 'StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API)'
+2026-05-15 08:23:59.156 +07:00 [ERR] Unhandled exception: /api/v1/auth/login
+System.Net.Sockets.SocketException (11004): The requested name is valid, but no data of the requested type was found.
+   at System.Net.NameResolutionPal.ProcessResult(SocketError errorCode, GetAddrInfoExContext* context)
+   at System.Net.NameResolutionPal.GetAddressInfoExCallback(Int32 error, Int32 bytes, NativeOverlapped* overlapped)
+--- End of stack trace from previous location ---
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync[TResult](Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|33_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at StrokePrediction.API.controllers.AuthController.Login(LoginRequest req) in C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at StrokePrediction.API.middlewares.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\middlewares\RequestLoggingMiddleware.cs:line 29
+   at StrokePrediction.API.middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\middlewares\GlobalExceptionMiddleware.cs:line 30
+2026-05-15 08:23:59.170 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5263/api/v1/auth/login - 500 null application/json 11222.0087ms
+2026-05-15 08:29:20.827 +07:00 [INF] === Stroke Prediction API starting ===
+2026-05-15 08:29:36.591 +07:00 [INF] Supabase connection OK
+2026-05-15 08:29:36.642 +07:00 [INF] Stroke Prediction API is running on http://localhost:5263
+2026-05-15 08:29:36.675 +07:00 [INF] Now listening on: http://localhost:5263
+2026-05-15 08:29:36.679 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-15 08:29:36.681 +07:00 [INF] Hosting environment: Development
+2026-05-15 08:29:36.683 +07:00 [INF] Content root path: C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API
+2026-05-15 08:29:54.941 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5263/api/v1/auth/login - application/json; charset=utf-8 40
+2026-05-15 08:29:54.960 +07:00 [INF] → POST /api/v1/auth/login | IP: ::1
+2026-05-15 08:29:54.970 +07:00 [INF] Executing endpoint 'StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API)'
+2026-05-15 08:29:54.986 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StrokePrediction.API.controllers.LoginRequest) on controller StrokePrediction.API.controllers.AuthController (StrokePrediction.API).
+2026-05-15 08:29:56.963 +07:00 [INF] Executed DbCommand (191ms) [Parameters=[@__req_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u.id, u.created_at, u.email, u.full_name, u.is_active, u.last_login_at, u.password_hash, u.role, u.updated_at, u.username
+FROM users AS u
+WHERE u.username = @__req_Username_0
+LIMIT 2
+2026-05-15 08:29:57.281 +07:00 [INF] Executed DbCommand (181ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE users SET last_login_at = @p0
+WHERE id = @p1;
+2026-05-15 08:29:57.570 +07:00 [INF] Executed DbCommand (171ms) [Parameters=[@p0='?' (DbType = Object), @p1='?' (DbType = DateTime), @p2='?' (DbType = Object), @p3='?' (DbType = Int32), @p4='?', @p5='?', @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO audit_logs (action, created_at, detail, entity_id, entity_type, ip_address, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+2026-05-15 08:29:57.586 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StrokePrediction.Core.entities.UserRole, StrokePrediction.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-15 08:29:57.595 +07:00 [INF] Executed action StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API) in 2603.0526ms
+2026-05-15 08:29:57.598 +07:00 [INF] Executed endpoint 'StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API)'
+2026-05-15 08:29:57.600 +07:00 [INF] ← POST /api/v1/auth/login | 200 | 2640ms
+2026-05-15 08:29:57.607 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5263/api/v1/auth/login - 200 null application/json; charset=utf-8 2666.4327ms
+2026-05-15 08:30:00.419 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5263/api/v1/stats/dashboard - null null
+2026-05-15 08:30:00.425 +07:00 [INF] → GET /api/v1/stats/dashboard | IP: ::1
+2026-05-15 08:30:00.432 +07:00 [INF] Executing endpoint 'StrokePrediction.API.controllers.StatsController.GetDashboardStats (StrokePrediction.API)'
+2026-05-15 08:30:00.438 +07:00 [INF] Route matched with {action = "GetDashboardStats", controller = "Stats"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDashboardStats() on controller StrokePrediction.API.controllers.StatsController (StrokePrediction.API).
+2026-05-15 08:30:00.988 +07:00 [INF] Executed DbCommand (484ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM predictions AS p
+2026-05-15 08:30:01.281 +07:00 [INF] Executed DbCommand (286ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM predictions AS p
+WHERE p.prediction = 1
+2026-05-15 08:30:01.712 +07:00 [INF] Executed DbCommand (377ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id AS "Id", p0.patient_code AS "PatientCode", CASE
+    WHEN t.prediction = 1 THEN 'Nguy cơ Đột quỵ'
+    ELSE 'Bình thường'
+END AS "Result", t.probability AS "Probability", t.created_at AS "CreatedAt"
+FROM (
+    SELECT p.id, p.created_at, p.patient_id, p.prediction, p.probability
+    FROM predictions AS p
+    ORDER BY p.created_at DESC
+    LIMIT @__p_0
+) AS t
+INNER JOIN patients AS p0 ON t.patient_id = p0.id
+ORDER BY t.created_at DESC
+2026-05-15 08:30:01.942 +07:00 [INF] Executed DbCommand (219ms) [Parameters=[@p0='?' (DbType = Object), @p1='?' (DbType = DateTime), @p2='?' (DbType = Object), @p3='?' (DbType = Int32), @p4='?', @p5='?', @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO audit_logs (action, created_at, detail, entity_id, entity_type, ip_address, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+2026-05-15 08:30:01.947 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], StrokePrediction.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-15 08:30:01.959 +07:00 [INF] Executed action StrokePrediction.API.controllers.StatsController.GetDashboardStats (StrokePrediction.API) in 1518.8806ms
+2026-05-15 08:30:01.962 +07:00 [INF] Executed endpoint 'StrokePrediction.API.controllers.StatsController.GetDashboardStats (StrokePrediction.API)'
+2026-05-15 08:30:01.963 +07:00 [INF] ← GET /api/v1/stats/dashboard | 200 | 1538ms
+2026-05-15 08:30:01.966 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5263/api/v1/stats/dashboard - 200 null application/json; charset=utf-8 1547.3497ms
+2026-05-15 08:30:01.993 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5263/api/v1/predictions?page=1&pageSize=50 - null null
+2026-05-15 08:30:01.996 +07:00 [INF] → GET /api/v1/predictions | IP: ::1
+2026-05-15 08:30:01.999 +07:00 [INF] Executing endpoint 'StrokePrediction.API.controllers.PredictionController.GetHistory (StrokePrediction.API)'
+2026-05-15 08:30:02.007 +07:00 [INF] Route matched with {action = "GetHistory", controller = "Prediction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHistory(Int32, Int32, System.Threading.CancellationToken) on controller StrokePrediction.API.controllers.PredictionController (StrokePrediction.API).
+2026-05-15 08:30:02.345 +07:00 [INF] Executed DbCommand (303ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t.id, t.created_at, t.input_snapshot, t.model_id, t.patient_id, t.prediction, t.probability, t.risk_level, t.threshold_used, t.user_id, p0.id, p0.age, p0.avg_glucose_level, p0.bmi, p0.created_at, p0.ever_married, p0.full_name, p0.gender, p0.heart_disease, p0.hypertension, p0.notes, p0.patient_code, p0.phone, p0."Residence_type", p0.smoking_status, p0.stroke, p0.updated_at, p0.user_id, p0.work_type, m.id, m.accuracy, m.auc_score, m.best_params, m.confusion_matrix, m.created_at, m.f1_score, m.imbalance_strategy, m.is_active, m.model_file_path, m.name, m.precision_score, m.recall_score, m.specificity, m.threshold, m.trained_at, m.training_duration, m.training_samples, m.version, u.id, u.created_at, u.email, u.full_name, u.is_active, u.last_login_at, u.password_hash, u.role, u.updated_at, u.username
+FROM (
+    SELECT p.id, p.created_at, p.input_snapshot, p.model_id, p.patient_id, p.prediction, p.probability, p.risk_level, p.threshold_used, p.user_id
+    FROM predictions AS p
+    ORDER BY p.created_at DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS t
+INNER JOIN patients AS p0 ON t.patient_id = p0.id
+INNER JOIN ml_models AS m ON t.model_id = m.id
+LEFT JOIN users AS u ON t.user_id = u.id
+ORDER BY t.created_at DESC
+2026-05-15 08:30:04.270 +07:00 [INF] Executed DbCommand (384ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM predictions AS p
+2026-05-15 08:30:04.274 +07:00 [INF] History fetched: Page=1, Total=224
+2026-05-15 08:30:04.515 +07:00 [INF] Executed DbCommand (237ms) [Parameters=[@p0='?' (DbType = Object), @p1='?' (DbType = DateTime), @p2='?' (DbType = Object), @p3='?' (DbType = Int32), @p4='?', @p5='?', @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO audit_logs (action, created_at, detail, entity_id, entity_type, ip_address, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+2026-05-15 08:30:04.519 +07:00 [INF] Executing OkObjectResult, writing value of type 'StrokePrediction.API.dtos.HistoryResponseDto'.
+2026-05-15 08:30:04.526 +07:00 [INF] Executed action StrokePrediction.API.controllers.PredictionController.GetHistory (StrokePrediction.API) in 2517.4849ms
+2026-05-15 08:30:04.528 +07:00 [INF] Executed endpoint 'StrokePrediction.API.controllers.PredictionController.GetHistory (StrokePrediction.API)'
+2026-05-15 08:30:04.530 +07:00 [INF] ← GET /api/v1/predictions | 200 | 2534ms
+2026-05-15 08:30:04.533 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5263/api/v1/predictions?page=1&pageSize=50 - 200 null application/json; charset=utf-8 2540.2013ms
+2026-05-15 08:30:36.524 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5263/api/v1/predictions - application/json; charset=utf-8 208
+2026-05-15 08:30:36.527 +07:00 [INF] → POST /api/v1/predictions | IP: ::1
+2026-05-15 08:30:36.530 +07:00 [INF] Executing endpoint 'StrokePrediction.API.controllers.PredictionController.Predict (StrokePrediction.API)'
+2026-05-15 08:30:36.535 +07:00 [INF] Route matched with {action = "Predict", controller = "Prediction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Predict(StrokePrediction.API.dtos.PredictRequestDto, System.Threading.CancellationToken) on controller StrokePrediction.API.controllers.PredictionController (StrokePrediction.API).
+2026-05-15 08:30:36.552 +07:00 [INF] Predicting stroke | Age=10, Model=stacking, UserId=null
+2026-05-15 08:30:37.310 +07:00 [INF] Executed DbCommand (748ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m.id, m.accuracy, m.auc_score, m.best_params, m.confusion_matrix, m.created_at, m.f1_score, m.imbalance_strategy, m.is_active, m.model_file_path, m.name, m.precision_score, m.recall_score, m.specificity, m.threshold, m.trained_at, m.training_duration, m.training_samples, m.version
+FROM ml_models AS m
+WHERE m.is_active
+LIMIT 1
+2026-05-15 08:30:37.324 +07:00 [INF] Python script path: C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\scripts\predict.py | Exists: true
+2026-05-15 08:30:38.356 +07:00 [INF] Python exit=0 | stdout={"success": true, "prediction": 0, "probability": 0.4736, "risk_level": "Medium", "message": "Nguy c\u01a1 trung b\u00ecnh. B\u1ea1n n\u00ean \u0111i\u1ec1u ch\u1ec9nh ch\u1ebf \u0111\u1ed9 \u0103n u\u1ed1ng, gi\u1ea3m mu\u1ed1i v\u00e0 \u0111\u01b0\u1eddng. N\u00ean \u0111i kh\u00e1m ki\u1ec3m tra s\u1ee9c kh\u1ecfe \u0111\u1ecbnh k\u1ef3."} | stderr=(empty)
+2026-05-15 08:30:39.347 +07:00 [INF] Executed DbCommand (916ms) [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = DateTime), @p4='?' (DbType = Object), @p5='?', @p6='?' (DbType = Object), @p7='?', @p8='?', @p9='?', @p10='?' (DbType = Object), @p11='?' (DbType = Object), @p12='?' (DbType = Int16), @p13='?' (DbType = DateTime), @p14='?' (DbType = Int32), @p15='?' (DbType = Object)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO patients (age, avg_glucose_level, bmi, created_at, ever_married, full_name, gender, notes, patient_code, phone, "Residence_type", smoking_status, stroke, updated_at, user_id, work_type)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15)
+RETURNING id, heart_disease, hypertension;
+2026-05-15 08:30:40.056 +07:00 [INF] Executed DbCommand (677ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.age, p.avg_glucose_level, p.bmi, p.created_at, p.ever_married, p.full_name, p.gender, p.heart_disease, p.hypertension, p.notes, p.patient_code, p.phone, p."Residence_type", p.smoking_status, p.stroke, p.updated_at, p.user_id, p.work_type
+FROM patients AS p
+WHERE p.id = @__p_0
+LIMIT 1
+2026-05-15 08:30:40.481 +07:00 [INF] Executed DbCommand (412ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m.id, m.accuracy, m.auc_score, m.best_params, m.confusion_matrix, m.created_at, m.f1_score, m.imbalance_strategy, m.is_active, m.model_file_path, m.name, m.precision_score, m.recall_score, m.specificity, m.threshold, m.trained_at, m.training_duration, m.training_samples, m.version
+FROM ml_models AS m
+WHERE m.is_active
+LIMIT 1
+2026-05-15 08:30:41.532 +07:00 [INF] Executed DbCommand (1,020ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Object), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int16), @p5='?' (DbType = Decimal), @p6='?' (DbType = Object), @p7='?' (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO predictions (created_at, input_snapshot, model_id, patient_id, prediction, probability, risk_level, threshold_used, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING id;
+2026-05-15 08:30:43.419 +07:00 [INF] Executed DbCommand (1,877ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.created_at, p.input_snapshot, p.model_id, p.patient_id, p.prediction, p.probability, p.risk_level, p.threshold_used, p.user_id
+FROM predictions AS p
+WHERE p.id = @__p_0
+LIMIT 1
+2026-05-15 08:30:43.755 +07:00 [INF] Executed DbCommand (328ms) [Parameters=[@p0='?' (DbType = Object), @p1='?' (DbType = DateTime), @p2='?' (DbType = Object), @p3='?' (DbType = Int32), @p4='?', @p5='?', @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO audit_logs (action, created_at, detail, entity_id, entity_type, ip_address, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+2026-05-15 08:30:43.761 +07:00 [INF] Saved prediction #225 | PatientCode=PAT-00225 | Risk=Medium
+2026-05-15 08:30:43.764 +07:00 [INF] Executing OkObjectResult, writing value of type 'StrokePrediction.API.dtos.PredictResponseDto'.
+2026-05-15 08:30:43.769 +07:00 [INF] Executed action StrokePrediction.API.controllers.PredictionController.Predict (StrokePrediction.API) in 7231.5052ms
+2026-05-15 08:30:43.772 +07:00 [INF] Executed endpoint 'StrokePrediction.API.controllers.PredictionController.Predict (StrokePrediction.API)'
+2026-05-15 08:30:43.773 +07:00 [INF] ← POST /api/v1/predictions | 200 | 7246ms
+2026-05-15 08:30:43.776 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5263/api/v1/predictions - 200 null application/json; charset=utf-8 7252.5505ms

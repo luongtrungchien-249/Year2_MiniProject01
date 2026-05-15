@@ -1,0 +1,340 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\views\\historyview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\historyview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\views\\historyview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\historyview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\views\\historyview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\historyview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\views\\batchscanview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\batchscanview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\views\\dashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\dashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\views\\singlecheckview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\singlecheckview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\views\\singlecheckview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\singlecheckview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\views\\dashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\dashboardview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\views\\configview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\configview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:loginform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\views\\singlecheckview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\singlecheckview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|c:\\users\\pc acer\\onedrive\\desktop\\ai ml engineer\\mini1\\strokepredictionwinforms\\views\\configview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B64D19A4-28A0-43B2-A6A5-333AEF795CD9}|StrokePredictionWinForms.csproj|solutionrelative:views\\configview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BatchScanView.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\BatchScanView.cs",
+              "RelativeDocumentMoniker": "Views\\BatchScanView.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\BatchScanView.cs [Design]",
+              "RelativeToolTip": "Views\\BatchScanView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T03:51:41.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardView.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\DashboardView.cs",
+              "RelativeDocumentMoniker": "Views\\DashboardView.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\DashboardView.cs [Design]",
+              "RelativeToolTip": "Views\\DashboardView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T15:12:55.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConfigView.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\ConfigView.cs",
+              "RelativeDocumentMoniker": "Views\\ConfigView.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\ConfigView.cs [Design]",
+              "RelativeToolTip": "Views\\ConfigView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T03:51:39.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HistoryView.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\HistoryView.cs",
+              "RelativeDocumentMoniker": "Views\\HistoryView.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\HistoryView.cs [Design]",
+              "RelativeToolTip": "Views\\HistoryView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T15:12:54.142Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HistoryView.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\HistoryView.cs",
+              "RelativeDocumentMoniker": "Views\\HistoryView.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\HistoryView.cs",
+              "RelativeToolTip": "Views\\HistoryView.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAcwKcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T11:56:34.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T15:10:53.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\LoginForm.cs [Design]",
+              "RelativeToolTip": "LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T15:28:42.944Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T01:46:17.465Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SingleCheckView.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\SingleCheckView.cs",
+              "RelativeDocumentMoniker": "Views\\SingleCheckView.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\SingleCheckView.cs [Design]",
+              "RelativeToolTip": "Views\\SingleCheckView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T15:12:52.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HistoryView.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\HistoryView.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\HistoryView.Designer.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\HistoryView.Designer.cs",
+              "RelativeToolTip": "Views\\HistoryView.Designer.cs",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAcwB8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T08:26:22.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DashboardView.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\DashboardView.cs",
+              "RelativeDocumentMoniker": "Views\\DashboardView.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\DashboardView.cs",
+              "RelativeToolTip": "Views\\DashboardView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T08:29:44.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SingleCheckView.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\SingleCheckView.cs",
+              "RelativeDocumentMoniker": "Views\\SingleCheckView.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\SingleCheckView.cs",
+              "RelativeToolTip": "Views\\SingleCheckView.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAwwOQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T07:43:01.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAuwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T02:10:46.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\MainForm.Designer.cs",
+              "RelativeToolTip": "MainForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T10:21:53.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginForm.resx",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\LoginForm.resx",
+              "RelativeDocumentMoniker": "LoginForm.resx",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\LoginForm.resx",
+              "RelativeToolTip": "LoginForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-03T15:22:23.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAWwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T15:10:47.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\LoginForm.Designer.cs",
+              "RelativeToolTip": "LoginForm.Designer.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T15:32:58.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SingleCheckView.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\SingleCheckView.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\SingleCheckView.Designer.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\SingleCheckView.Designer.cs",
+              "RelativeToolTip": "Views\\SingleCheckView.Designer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAEBVwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T11:56:35.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\ApiClient.cs",
+              "RelativeDocumentMoniker": "ApiClient.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\ApiClient.cs",
+              "RelativeToolTip": "ApiClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T15:12:47.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ConfigView.cs",
+              "DocumentMoniker": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\ConfigView.cs",
+              "RelativeDocumentMoniker": "Views\\ConfigView.cs",
+              "ToolTip": "C:\\Users\\PC ACER\\OneDrive\\Desktop\\AI ML Engineer\\Mini1\\StrokePredictionWinForms\\Views\\ConfigView.cs",
+              "RelativeToolTip": "Views\\ConfigView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T15:10:38.571Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

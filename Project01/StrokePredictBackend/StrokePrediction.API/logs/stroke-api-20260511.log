@@ -1,0 +1,118 @@
+2026-05-11 17:20:00.220 +07:00 [INF] === Stroke Prediction API starting ===
+2026-05-11 17:20:03.952 +07:00 [INF] Supabase connection OK
+2026-05-11 17:20:04.115 +07:00 [INF] Stroke Prediction API is running on http://localhost:5263
+2026-05-11 17:20:04.193 +07:00 [INF] Now listening on: http://localhost:5263
+2026-05-11 17:20:04.198 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-11 17:20:04.200 +07:00 [INF] Hosting environment: Development
+2026-05-11 17:20:04.201 +07:00 [INF] Content root path: C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API
+2026-05-11 17:32:16.225 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5263/api/v1/auth/login - application/json; charset=utf-8 40
+2026-05-11 17:32:16.260 +07:00 [INF] → POST /api/v1/auth/login | IP: ::1
+2026-05-11 17:32:16.277 +07:00 [INF] Executing endpoint 'StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API)'
+2026-05-11 17:32:16.308 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(StrokePrediction.API.controllers.LoginRequest) on controller StrokePrediction.API.controllers.AuthController (StrokePrediction.API).
+2026-05-11 17:32:18.113 +07:00 [INF] Executed DbCommand (218ms) [Parameters=[@__req_Username_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u.id, u.created_at, u.email, u.full_name, u.is_active, u.last_login_at, u.password_hash, u.role, u.updated_at, u.username
+FROM users AS u
+WHERE u.username = @__req_Username_0
+LIMIT 2
+2026-05-11 17:32:18.454 +07:00 [INF] Executed DbCommand (154ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+UPDATE users SET last_login_at = @p0
+WHERE id = @p1;
+2026-05-11 17:32:18.834 +07:00 [INF] Executed DbCommand (170ms) [Parameters=[@p0='?' (DbType = Object), @p1='?' (DbType = DateTime), @p2='?' (DbType = Object), @p3='?' (DbType = Int32), @p4='?', @p5='?', @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO audit_logs (action, created_at, detail, entity_id, entity_type, ip_address, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+2026-05-11 17:32:18.856 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[StrokePrediction.Core.entities.UserRole, StrokePrediction.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-11 17:32:18.867 +07:00 [INF] Executed action StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API) in 2553.2597ms
+2026-05-11 17:32:18.871 +07:00 [INF] Executed endpoint 'StrokePrediction.API.controllers.AuthController.Login (StrokePrediction.API)'
+2026-05-11 17:32:18.875 +07:00 [INF] ← POST /api/v1/auth/login | 200 | 2616ms
+2026-05-11 17:32:18.883 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5263/api/v1/auth/login - 200 null application/json; charset=utf-8 2660.3402ms
+2026-05-11 17:32:57.419 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5263/api/v1/predictions - application/json; charset=utf-8 208
+2026-05-11 17:32:57.426 +07:00 [INF] → POST /api/v1/predictions | IP: ::1
+2026-05-11 17:32:57.430 +07:00 [INF] Executing endpoint 'StrokePrediction.API.controllers.PredictionController.Predict (StrokePrediction.API)'
+2026-05-11 17:32:57.439 +07:00 [INF] Route matched with {action = "Predict", controller = "Prediction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Predict(StrokePrediction.API.dtos.PredictRequestDto, System.Threading.CancellationToken) on controller StrokePrediction.API.controllers.PredictionController (StrokePrediction.API).
+2026-05-11 17:32:57.490 +07:00 [INF] Predicting stroke | Age=12, Model=stacking, UserId=null
+2026-05-11 17:32:57.741 +07:00 [INF] Executed DbCommand (147ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m.id, m.accuracy, m.auc_score, m.best_params, m.confusion_matrix, m.created_at, m.f1_score, m.imbalance_strategy, m.is_active, m.model_file_path, m.name, m.precision_score, m.recall_score, m.specificity, m.threshold, m.trained_at, m.training_duration, m.training_samples, m.version
+FROM ml_models AS m
+WHERE m.is_active
+LIMIT 1
+2026-05-11 17:32:57.772 +07:00 [INF] Python script path: C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\scripts\predict.py | Exists: true
+2026-05-11 17:32:59.857 +07:00 [INF] Python exit=0 | stdout={"success": true, "prediction": 0, "probability": 0.4537, "risk_level": "Medium", "message": "Nguy c\u01a1 trung b\u00ecnh. B\u1ea1n n\u00ean \u0111i\u1ec1u ch\u1ec9nh ch\u1ebf \u0111\u1ed9 \u0103n u\u1ed1ng, gi\u1ea3m mu\u1ed1i v\u00e0 \u0111\u01b0\u1eddng. N\u00ean \u0111i kh\u00e1m ki\u1ec3m tra s\u1ee9c kh\u1ecfe \u0111\u1ecbnh k\u1ef3."} | stderr=(empty)
+2026-05-11 17:33:00.138 +07:00 [INF] Executed DbCommand (158ms) [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = DateTime), @p4='?' (DbType = Object), @p5='?', @p6='?' (DbType = Object), @p7='?', @p8='?', @p9='?', @p10='?' (DbType = Object), @p11='?' (DbType = Object), @p12='?' (DbType = Int16), @p13='?' (DbType = DateTime), @p14='?' (DbType = Int32), @p15='?' (DbType = Object)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO patients (age, avg_glucose_level, bmi, created_at, ever_married, full_name, gender, notes, patient_code, phone, "Residence_type", smoking_status, stroke, updated_at, user_id, work_type)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15)
+RETURNING id, heart_disease, hypertension;
+2026-05-11 17:33:00.342 +07:00 [INF] Executed DbCommand (144ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.age, p.avg_glucose_level, p.bmi, p.created_at, p.ever_married, p.full_name, p.gender, p.heart_disease, p.hypertension, p.notes, p.patient_code, p.phone, p."Residence_type", p.smoking_status, p.stroke, p.updated_at, p.user_id, p.work_type
+FROM patients AS p
+WHERE p.id = @__p_0
+LIMIT 1
+2026-05-11 17:33:00.502 +07:00 [INF] Executed DbCommand (138ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m.id, m.accuracy, m.auc_score, m.best_params, m.confusion_matrix, m.created_at, m.f1_score, m.imbalance_strategy, m.is_active, m.model_file_path, m.name, m.precision_score, m.recall_score, m.specificity, m.threshold, m.trained_at, m.training_duration, m.training_samples, m.version
+FROM ml_models AS m
+WHERE m.is_active
+LIMIT 1
+2026-05-11 17:33:00.817 +07:00 [INF] Executed DbCommand (263ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Object), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int16), @p5='?' (DbType = Decimal), @p6='?' (DbType = Object), @p7='?' (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO predictions (created_at, input_snapshot, model_id, patient_id, prediction, probability, risk_level, threshold_used, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING id;
+2026-05-11 17:33:00.970 +07:00 [INF] Executed DbCommand (136ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.created_at, p.input_snapshot, p.model_id, p.patient_id, p.prediction, p.probability, p.risk_level, p.threshold_used, p.user_id
+FROM predictions AS p
+WHERE p.id = @__p_0
+LIMIT 1
+2026-05-11 17:33:01.112 +07:00 [INF] Executed DbCommand (132ms) [Parameters=[@p0='?' (DbType = Object), @p1='?' (DbType = DateTime), @p2='?' (DbType = Object), @p3='?' (DbType = Int32), @p4='?', @p5='?', @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO audit_logs (action, created_at, detail, entity_id, entity_type, ip_address, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+2026-05-11 17:33:01.118 +07:00 [INF] Saved prediction #201 | PatientCode=PAT-00201 | Risk=Medium
+2026-05-11 17:33:01.122 +07:00 [INF] Executing OkObjectResult, writing value of type 'StrokePrediction.API.dtos.PredictResponseDto'.
+2026-05-11 17:33:01.128 +07:00 [INF] Executed action StrokePrediction.API.controllers.PredictionController.Predict (StrokePrediction.API) in 3685.1445ms
+2026-05-11 17:33:01.131 +07:00 [INF] Executed endpoint 'StrokePrediction.API.controllers.PredictionController.Predict (StrokePrediction.API)'
+2026-05-11 17:33:01.133 +07:00 [INF] ← POST /api/v1/predictions | 200 | 3706ms
+2026-05-11 17:33:01.137 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5263/api/v1/predictions - 200 null application/json; charset=utf-8 3717.153ms
+2026-05-11 17:33:26.792 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5263/api/v1/predictions - application/json; charset=utf-8 203
+2026-05-11 17:33:26.800 +07:00 [INF] → POST /api/v1/predictions | IP: ::1
+2026-05-11 17:33:26.804 +07:00 [INF] Executing endpoint 'StrokePrediction.API.controllers.PredictionController.Predict (StrokePrediction.API)'
+2026-05-11 17:33:26.810 +07:00 [INF] Route matched with {action = "Predict", controller = "Prediction"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Predict(StrokePrediction.API.dtos.PredictRequestDto, System.Threading.CancellationToken) on controller StrokePrediction.API.controllers.PredictionController (StrokePrediction.API).
+2026-05-11 17:33:26.816 +07:00 [INF] Predicting stroke | Age=80, Model=stacking, UserId=null
+2026-05-11 17:33:26.955 +07:00 [INF] Executed DbCommand (132ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m.id, m.accuracy, m.auc_score, m.best_params, m.confusion_matrix, m.created_at, m.f1_score, m.imbalance_strategy, m.is_active, m.model_file_path, m.name, m.precision_score, m.recall_score, m.specificity, m.threshold, m.trained_at, m.training_duration, m.training_samples, m.version
+FROM ml_models AS m
+WHERE m.is_active
+LIMIT 1
+2026-05-11 17:33:26.960 +07:00 [INF] Python script path: C:\Users\PC ACER\OneDrive\Desktop\AI ML Engineer\Mini1\StrokePredictBackend\StrokePrediction.API\scripts\predict.py | Exists: true
+2026-05-11 17:33:28.487 +07:00 [INF] Python exit=0 | stdout={"success": true, "prediction": 1, "probability": 0.5455, "risk_level": "Medium", "message": "Nguy c\u01a1 trung b\u00ecnh. B\u1ea1n n\u00ean \u0111i\u1ec1u ch\u1ec9nh ch\u1ebf \u0111\u1ed9 \u0103n u\u1ed1ng, gi\u1ea3m mu\u1ed1i v\u00e0 \u0111\u01b0\u1eddng. N\u00ean \u0111i kh\u00e1m ki\u1ec3m tra s\u1ee9c kh\u1ecfe \u0111\u1ecbnh k\u1ef3."} | stderr=(empty)
+2026-05-11 17:33:28.628 +07:00 [INF] Executed DbCommand (133ms) [Parameters=[@p0='?' (DbType = Decimal), @p1='?' (DbType = Decimal), @p2='?' (DbType = Decimal), @p3='?' (DbType = DateTime), @p4='?' (DbType = Object), @p5='?', @p6='?' (DbType = Object), @p7='?' (DbType = Int16), @p8='?' (DbType = Int16), @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Object), @p13='?' (DbType = Object), @p14='?' (DbType = Int16), @p15='?' (DbType = DateTime), @p16='?' (DbType = Int32), @p17='?' (DbType = Object)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO patients (age, avg_glucose_level, bmi, created_at, ever_married, full_name, gender, heart_disease, hypertension, notes, patient_code, phone, "Residence_type", smoking_status, stroke, updated_at, user_id, work_type)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17)
+RETURNING id;
+2026-05-11 17:33:28.769 +07:00 [INF] Executed DbCommand (134ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.age, p.avg_glucose_level, p.bmi, p.created_at, p.ever_married, p.full_name, p.gender, p.heart_disease, p.hypertension, p.notes, p.patient_code, p.phone, p."Residence_type", p.smoking_status, p.stroke, p.updated_at, p.user_id, p.work_type
+FROM patients AS p
+WHERE p.id = @__p_0
+LIMIT 1
+2026-05-11 17:33:29.654 +07:00 [INF] Executed DbCommand (879ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m.id, m.accuracy, m.auc_score, m.best_params, m.confusion_matrix, m.created_at, m.f1_score, m.imbalance_strategy, m.is_active, m.model_file_path, m.name, m.precision_score, m.recall_score, m.specificity, m.threshold, m.trained_at, m.training_duration, m.training_samples, m.version
+FROM ml_models AS m
+WHERE m.is_active
+LIMIT 1
+2026-05-11 17:33:29.793 +07:00 [INF] Executed DbCommand (133ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (DbType = Object), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int16), @p5='?' (DbType = Decimal), @p6='?' (DbType = Object), @p7='?' (DbType = Decimal), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO predictions (created_at, input_snapshot, model_id, patient_id, prediction, probability, risk_level, threshold_used, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING id;
+2026-05-11 17:33:29.931 +07:00 [INF] Executed DbCommand (132ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p.id, p.created_at, p.input_snapshot, p.model_id, p.patient_id, p.prediction, p.probability, p.risk_level, p.threshold_used, p.user_id
+FROM predictions AS p
+WHERE p.id = @__p_0
+LIMIT 1
+2026-05-11 17:33:30.075 +07:00 [INF] Executed DbCommand (138ms) [Parameters=[@p0='?' (DbType = Object), @p1='?' (DbType = DateTime), @p2='?' (DbType = Object), @p3='?' (DbType = Int32), @p4='?', @p5='?', @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO audit_logs (action, created_at, detail, entity_id, entity_type, ip_address, user_id)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6)
+RETURNING id;
+2026-05-11 17:33:30.079 +07:00 [INF] Saved prediction #202 | PatientCode=PAT-00202 | Risk=Medium
+2026-05-11 17:33:30.082 +07:00 [INF] Executing OkObjectResult, writing value of type 'StrokePrediction.API.dtos.PredictResponseDto'.
+2026-05-11 17:33:30.085 +07:00 [INF] Executed action StrokePrediction.API.controllers.PredictionController.Predict (StrokePrediction.API) in 3270.2527ms
+2026-05-11 17:33:30.087 +07:00 [INF] Executed endpoint 'StrokePrediction.API.controllers.PredictionController.Predict (StrokePrediction.API)'
+2026-05-11 17:33:30.090 +07:00 [INF] ← POST /api/v1/predictions | 200 | 3290ms
+2026-05-11 17:33:30.093 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5263/api/v1/predictions - 200 null application/json; charset=utf-8 3300.9823ms
