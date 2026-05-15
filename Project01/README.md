@@ -1,6 +1,6 @@
 # Stroke Prediction — Dự đoán Nguy cơ Đột quỵ
 
-Đây là đồ án 1 của mình, xây dựng hệ thống dự đoán nguy cơ đột quỵ cho bệnh nhân. Mô hình sử dụng Stacking Ensemble (Decision Tree, Random Forest, KNN, AdaBoost + Logistic Regression meta-learner) với xử lý mất cân bằng dữ liệu (SMOTE / Class Weight) trên dataset Stroke Prediction từ Kaggle.
+Đây là đồ án 1 của mình, xây dựng hệ thống dự đoán nguy cơ đột quỵ cho bệnh nhân. Mô hình sử dụng các mô hình Machine Learning (Decision Tree, Random Forest, KNN, AdaBoost, Stacking) với xử lý mất cân bằng dữ liệu (SMOTE / Class Weight) trên dataset Stroke Prediction từ Kaggle.
 
 > **Đồ Án 1** · Trường Đại Học Sư Phạm Kỹ Thuật Hưng Yên · Khoa Công Nghệ Thông Tin
 
@@ -28,7 +28,7 @@
 - **Chỉ số lâm sàng**: tăng huyết áp, bệnh tim, mức đường huyết trung bình, BMI.
 - **Lối sống**: tình trạng hút thuốc lá.
 
-Lý do chọn Stacking Ensemble là vì kết hợp điểm mạnh của nhiều thuật toán khác nhau (Decision Tree xử lý categorical, KNN xử lý khoảng cách, AdaBoost tập trung ca khó) thay vì phụ thuộc vào một mô hình đơn lẻ — đặc biệt hiệu quả với dữ liệu y tế mất cân bằng nặng (chỉ ~5% ca đột quỵ).
+
 
 ---
 
