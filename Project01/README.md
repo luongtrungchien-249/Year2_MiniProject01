@@ -129,8 +129,8 @@ Hoặc nếu chạy trên Colab:
 
 > Dataset: [Stroke Prediction Dataset — Kaggle](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
 
-File gốc: `healthcare-dataset-stroke-data.csv`  
-Khoảng 5,110 bản ghi với 11 đặc trưng đầu vào + 1 nhãn (`stroke`).
+File gốc: `data_stroke.csv`  
+Khoảng 4981 bản ghi với 11 đặc trưng đầu vào + 1 nhãn (`stroke`).
 
 ---
 
@@ -138,7 +138,7 @@ Khoảng 5,110 bản ghi với 11 đặc trưng đầu vào + 1 nhãn (`stroke`)
 
 | Feature | Kiểu | Mô tả |
 |---|---|---|
-| `gender` | Categorical | Male / Female / Other |
+| `gender` | Categorical | Male / Female |
 | `age` | Numeric | Tuổi bệnh nhân |
 | `hypertension` | 0\|1 | Có tăng huyết áp |
 | `heart_disease` | 0\|1 | Có bệnh tim |
@@ -146,7 +146,7 @@ Khoảng 5,110 bản ghi với 11 đặc trưng đầu vào + 1 nhãn (`stroke`)
 | `work_type` | Categorical | Private / Self-employed / Govt_job / children / Never_worked |
 | `Residence_type` | Categorical | Urban / Rural |
 | `avg_glucose_level` | Numeric | Mức đường huyết trung bình |
-| `bmi` | Numeric | Chỉ số khối cơ thể (có thể null) |
+| `bmi` | Numeric | Chỉ số khối cơ thể  |
 | `smoking_status` | Categorical | formerly smoked / never smoked / smokes / Unknown |
 
 ---
@@ -154,11 +154,11 @@ Khoảng 5,110 bản ghi với 11 đặc trưng đầu vào + 1 nhãn (`stroke`)
 #### Bước 1.4 — Train các mô hình
 
 Notebook train và Grid Search tham số tối ưu cho từng mô hình:
-- **Decision Tree** — Grid Search depth, min_samples
-- **Random Forest** — Grid Search n_estimators, max_features
-- **KNN** — Grid Search n_neighbors, metric
-- **AdaBoost** — Grid Search n_estimators, learning_rate
-- **Logistic Regression** — meta-learner cho Stacking
+- **Decision Tree** — Grid Search + max_depth, criterion, min_samples_split
+- **Random Forest** — Grid Search + n_estimators, min_samples_split, max_depth, max_features
+- **KNN** — Grid Search + n_neighbors, metric, weights
+- **AdaBoost** — Grid Search + n_estimators, learning_rate
+- **Logistic Regression** CV folds, base learners, meta-learner
 
 Tất cả đều dùng Stratified K-Fold (k=5) để Cross-Validate, có áp dụng SMOTE trong từng fold để tránh Data Leakage.
 
